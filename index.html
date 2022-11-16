@@ -26,7 +26,13 @@
     zoom: 9, // starting zoom
     projection: 'globe' // display the map as a 3D globe
     });
-    
+
+ 
+    // Create a default Marker, colored red.
+    const marker1 = new mapboxgl.Marker({ color: 'red'})
+    .setLngLat([-74.5, 40])
+    .addTo(map);
+        
  
 </script>
 
